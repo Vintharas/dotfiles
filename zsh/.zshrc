@@ -42,9 +42,9 @@ export DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
   git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
   vi-mode
+  zsh-syntax-highlighting        # https://github.com/zsh-users/zsh-syntax-highlighting
+  zsh-autosuggestions            # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 )
 
 source $ZSH/oh-my-zsh.sh
