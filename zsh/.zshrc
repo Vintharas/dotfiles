@@ -93,6 +93,7 @@ alias zshrc="nvim ~/.zshrc"
 alias zshrc-refresh="source ~/.zshrc && clear"
 alias z="zshrc"
 alias zrc="z"
+alias zrc-refresh="zshrc-refresh"
 alias zs="zshrc-refresh"
 alias cl="clear"
 alias v="nvim"
@@ -180,7 +181,11 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Source API keys
+if [ -f ~/.api-keys.sh ]; then
+    source ~/.api-keys.sh
+fi
